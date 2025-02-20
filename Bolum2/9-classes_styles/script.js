@@ -17,7 +17,7 @@ function fn(){
         // items[i].classList.toggle("active");
         items[i].style.color = "red";
         items[i].style.fontSize = "30px";
-        items[i].style.padding = "20px"
+        items[i].style.padding = "20px";
     }
 
 }
