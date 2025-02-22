@@ -26,7 +26,7 @@ function Product(title,description,price,stock){
     }
 
     this.is_active = function(){
-        return (this.stock > 0) ? "stokta yok":`stoktaki urun adedi ${stock}`;
+        return (this.stock < 0) ? "stokta yok":`stoktaki urun adedi ${stock}`;
     }
 
 }
