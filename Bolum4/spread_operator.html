@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // const msj = ["Benim","adim","Harun","Metin"];
+        // let sonuc = "";
+
+        // for(let x of msj){
+
+        //     sonuc += x + " ";
+
+
+        // }
+        // console.log(sonuc);
+        // console.log(...msj);
+
+        // const dizi1 = ["bir","iki"];
+        // const dizi2 = ["uc","dort"];
+
+        // const dizi3 = [...dizi1,...dizi2,"bes","alti"];
+
+        // console.log(dizi3);
+
+        const dizi1 = [1,2,3,4];
+        // const dizi2 = dizi1; //referans copy
+
+        const dizi2 = [...dizi1];
+
+        dizi2[0] = 100;
+
+        console.log(dizi1,dizi2);
+
+        const user = {
+            username: "harunMetin",
+            email: "hrn.mtn@gmail.com"
+        }
+
+        const adress = {
+            username: "abc",
+            city: "Antalya"
+        }
+
+        console.log({...user, ...adress});
+
+
+        //rest parameters
+
+        function toplam(...args) {
+
+            let sonuc = 0;
+            for(let sayi of args){
+                sonuc += sayi;
+            }
+            return sonuc;
+        }
+        console.log(toplam(1,5,3,1));
+        
+        function bilgileriGoster(isim, soyad, ...adres) {
+
+            console.log(isim,soyad,adres);
+            
+            
+        }
+
+        bilgileriGoster("ali","ermis","istanbul","bebek","Ataturk mahallesi");
+        
+        
+        
+        
+
+
+    </script>
+</body>
+</html>
