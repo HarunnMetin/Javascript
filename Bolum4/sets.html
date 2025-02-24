@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        const sayilar = new Set([1,2,3,4,5,6]);
+
+        sayilar.add(45);
+        sayilar.add(13);
+        sayilar.add(13);
+        sayilar.add("67")
+
+        // const dizi = [...sayilar]
+
+        sayilar.delete(1);
+        sayilar.delete(2);
+
+        console.log(sayilar.has(2));
+        console.log(sayilar.has(3));
+
+        // sayilar.clear();
+
+        console.log(sayilar.values());
+
+        for(let x of sayilar){
+            console.log(x);
+            
+        }
+        
+        
+        
+        console.log(sayilar);
+        
+    </script>
+</body>
+</html>
