@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        const ogrenciler = new Map();
+
+        ogrenciler.set(1, "Hasan Coban");
+        ogrenciler.set("1588384883", "Demir Can");
+        ogrenciler.set(true, "Muhammed Deniz");
+
+        console.log(ogrenciler.get(true));
+
+        let sonuc;
+        sonuc = ogrenciler.size;
+        sonuc = ogrenciler.has(1);
+        sonuc = ogrenciler.has(true);
+        sonuc = ogrenciler.has(2);
+
+        
+        // ogrenciler.delete(1);
+        sonuc = ogrenciler.size;
+        console.log(sonuc);
+
+        // ogrenciler.clear();
+        console.log(ogrenciler);
+        
+        for(let x of ogrenciler.keys()){
+            console.log(x);
+
+        }
+        console.log("*-__-__-__--__--__--__--___--__--__---_----_---_-__-__");
+        
+
+        for(let x of ogrenciler.values()){
+            console.log(x);
+            
+        }
+
+        console.log("*-__-__-__--__--__--__--___--__--__---_----_---_-__-__");
+
+        for(let x of ogrenciler.entries()){
+            console.log(x[0]);
+            
+        }
+
+        console.log("*-__-__-__--__--__--__--___--__--__---_----_---_-__-__");
+
+        for(let [keys,values] of ogrenciler.entries()){
+            console.log(keys,values);
+            
+        }
+
+
+
+        const map = new Map();
+
+        let name = {name: "Harun"};
+        map.set(name,"Harun Metin")
+
+        console.log(map.get(name));
+        
+
+        
+        
+
+        
+
+        
+        
+    </script>
+</body>
+</html>
