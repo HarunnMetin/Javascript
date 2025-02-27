@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //login
+        //post
+        //create post
+
+        console.log("start");
+
+        const login = (username, password, callback) => {
+
+            setTimeout(() => {
+
+                callback({ username: username, email: "hrn07@gmail.com" }) 
+
+            },1000)
+        }
+
+        const getPostByUsername = (username, callback) => {
+
+            setTimeout(() => {
+                callback(["post 1","post 2","post 3"])
+            },2000)
+        }
+
+        login("harunmetin","12345", user => {
+
+            console.log(user.username);
+            console.log(user.email);
+
+            getPostByUsername(user.username, (post) => {
+                console.log(post);
+                
+            });
+            
+            
+        });
+    
+        console.log("end");
+
+    </script>
+</body>
+</html>
